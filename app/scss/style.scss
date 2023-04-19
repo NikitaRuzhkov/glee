@@ -5,6 +5,117 @@
 
 
 
+.header {
+  padding: 50px 0 45px;
+
+  &__inner {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+
+  & p {
+    padding-left: 15px;
+    color: $accent;
+    font-size: 36px;
+    line-height: 58px;
+    @extend %rubik-500;
+  }
+}
+
+.menu {
+  &__list {
+    display: flex;
+  }
+
+  &__list-item+.menu__list-item {
+    padding-left: 30px;
+  }
+
+  &__list-link {
+    font-size: 15px;
+    line-height: 12px;
+    color: $accent;
+    @extend %rubik-400;
+  }
+}
+
+
+
+
+.user-nav {
+  display: flex;
+  gap: 25px;
+
+  &__link {
+    position: relative;
+    margin: 0 auto;
+  }
+
+  &__num {
+    position: absolute;
+    width: 11px;
+    height: 11px;
+    border-radius: 50%;
+    background-color: #fff;
+    top: -5px;
+    right: -6px;
+    font-size: 10px;
+    color: #000;
+    text-align: center;
+    line-height: 11px;
+    @extend %dmsans-400;
+
+  }
+
+  &__both {
+    display: flex;
+    align-items: center;
+    width: 178px;
+    height: 52px;
+    background-color: #fcd7b6;
+    border-top-left-radius: 30px;
+    border-top-right-radius: 30px;
+    border-bottom-right-radius: 30px;
+    border-bottom-left-radius: 30px;
+  }
+
+  &__1 {
+    display: flex;
+    align-items: center;
+    width: 52px;
+    height: 52px;
+    border-radius: 50%;
+    background-color: #edf1f4;
+
+  }
+
+  &__3 { 
+    border-left: 1px solid #fde7d3;
+  }
+
+  &__4 {
+    display: flex;
+    align-items: center;
+    width: 52px;
+    height: 52px;
+    border-radius: 50%;
+    background-color: #a3bbc8;
+  }
+
+}
+
+
+
+
+
+
+
 
 
 
@@ -14,5 +125,3 @@
 
 
 @import 'media';
-
-
