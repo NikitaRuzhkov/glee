@@ -7,6 +7,8 @@
 
 .header {
   padding: 50px 0 45px;
+  width: 1800px;
+  margin: 0 auto;
 
   &__inner {
     display: flex;
@@ -45,7 +47,7 @@
   }
 }
 
-ul.menu__list{
+ul.menu__list {
   padding-left: 150px;
 }
 
@@ -99,7 +101,7 @@ ul.menu__list{
 
   }
 
-  &__3 { 
+  &__3 {
     border-left: 1px solid #fde7d3;
   }
 
@@ -114,6 +116,106 @@ ul.menu__list{
 
 }
 
+
+
+
+
+
+.footer {
+  padding-top: 75px;
+}
+
+.footer-top {
+  border-bottom: 1px solid #dae4e9;
+  display: flex;
+  padding-bottom: 75px;
+
+  &__item {}
+
+  &__contact {
+    width: 290px;
+    margin-right: 110px;
+  }
+
+  &__nav {
+    width: 270px;
+    margin-right: 100px;
+  }
+
+  &__form {
+    max-width: 300px
+  }
+
+  &__logo {
+    margin-bottom: 28px;
+  }
+
+  &__title {
+    margin-bottom: 35px;
+    color: #1f2044;
+    font-size: 16px;
+    line-height: 21px;
+    @extend %dmsans-700;
+    padding-top: 24px;
+
+  }
+
+  &__adress,
+  &__email,
+  &__phone {
+    margin-bottom: 10px;
+    display: block;
+
+  }
+
+  &__link {
+    margin-bottom: 4px;
+    display: block;
+  }
+
+  &__text {
+    color: $text;
+    @extend %rubik-500;
+    line-height: 24px;
+    margin-bottom: 31px;
+  }
+
+  &__form-input {
+    background-color: #fef7f0;
+    max-width: 170px;
+    width: 100%;
+    border: none;
+    padding: 10px;
+    &::placeholder{
+      color: #234969;
+      font-size: 12px;
+    }
+  }
+
+  &__form-btn {
+    border: none;
+    padding: 10px;
+    color: #fff;
+    background-color: #234969;
+    cursor: pointer;
+  }
+}
+
+.footer-bottom{
+  padding: 20px 0 20px;
+  display: flex;
+  justify-content: space-between;
+  &__copy{
+    color:  $text;
+  }
+  &__nav{
+    display: flex;
+    gap: 20px;
+  }
+  &__link{
+    border-left: 1px solid #7b7b7b;
+  }
+}
 
 
 
