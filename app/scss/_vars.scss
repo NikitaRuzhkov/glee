@@ -1,6 +1,7 @@
 $accent: #436372;
 $title: #191919;
 $text: #8b8b8b;
+$bgc: #fcd7b6;
 
 %rubik-400 {
   font-family: 'Rubik-Regular', sans-serif;
@@ -17,7 +18,7 @@ $text: #8b8b8b;
   font-weight: 500;
 }
 
-%dmsans-500{
+%dmsans-500 {
   font-family: 'DMSans-Medium', sans-serif;
   font-weight: 500;
 }
@@ -25,4 +26,13 @@ $text: #8b8b8b;
 %dmsans-700 {
   font-family: 'DMSans-Bold', sans-serif;
   font-weight: 700;
+}
+
+%btn {
+  font-size: 15px;
+  line-height: 12px;
+  background-color: #a3bbc8;
+  padding: 25px 18px 22px 15px;
+  color: #fff;
+  @extend %rubik-500;
 }
