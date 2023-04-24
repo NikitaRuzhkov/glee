@@ -186,11 +186,14 @@ ul.menu__list {
     width: 100%;
     border: none;
     padding: 10px;
+    @extend %dmsans-400;
 
-    &::placeholder {
-      color: #234969;
-      font-size: 12px;
-    }
+  }
+
+  .footer-top__form-input::placeholder {
+    font-size: 12px;
+    @extend %dmsans-400;
+    color: #234969;
   }
 
   &__form-btn {
@@ -375,37 +378,46 @@ ul.menu__list {
 
 }
 
-// .buy {
-//   position: relative;
-  
+.mixitup-control-active {
+  color: #000;
+}
 
-//   &__product {
-//     position: absolute;
-//     content: '';
-//     opacity: 1;   
-//   }
+.buy {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  opacity: 1;
+}
+.buy::hover{
+  position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    opacity: 1;
+}
+
+.left-buy {
+  position: absolute;
+  top: 50%;
+  left: 10%;
+}
+
+.center-buy {
+  position: absolute;
+  top: 50%;
+  left: 30%;
+}
+
+.right-buy {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+}
 
 
-// }
-//  .buy__product::hover {
-//    opacity: 1;
-//  }
-
-// .right-buy {
-//   top: 40%;
-//   left: 54%;
-
-// }
-
-// .center-buy {
-//   top: 40%;
-//   left: 34%;
-// }
-
-// .left-buy {
-//   top: 40%;
-//   left: 14%;
-// }
 
 
 
