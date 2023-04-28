@@ -39,6 +39,14 @@ a {
   padding-bottom: 35px;
 }
 
+.top__title {
+  @extend %rubik-300;
+  font-size: 36px;
+  line-height: 26px;
+  color: #222933;
+  margin-bottom: 15px;
+}
+
 .buttons {
   border: none;
   background-color: #fff;
@@ -47,5 +55,34 @@ a {
   line-height: 30px;
   color: $text;
   padding-bottom: 80px;
-  
+
+}
+
+.breadcrumbs {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+
+  &__list {
+    display: flex;
+    gap: 15px;
+  }
+  &__item{
+    position: relative;
+    padding-right: 5px;
+    &::after{
+      content: '/';
+      position: absolute;
+      right: -5px;
+      top: 2px;
+      
+    }
+    &:last-child{
+     &::after{
+      display: none;
+     }
+    }
+  }
+
 }
