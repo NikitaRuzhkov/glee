@@ -445,7 +445,7 @@ ul.menu__list {
   gap: 20px;
   justify-content: center;
   align-items: center;
-overflow: hidden;
+  overflow: hidden;
   transform: translateY(1200%);
   transition: all .3s;
 
@@ -458,7 +458,7 @@ overflow: hidden;
     align-items: center;
     display: flex;
     justify-content: center;
-   
+
 
     &:hover {
       background-color: #a3bbc8;
@@ -479,23 +479,7 @@ overflow: hidden;
 }
 
 
-// .left-buy {
-//   position: absolute;
-//   top: 50%;
-//   left: 10%;
-// }
 
-// .center-buy {
-//   position: absolute;
-//   top: 50%;
-//   left: 30%;
-// }
-
-// .right-buy {
-//   position: absolute;
-//   top: 50%;
-//   left: 50%;
-// }
 
 .light {
   padding: 50px 0 45px;
@@ -1078,11 +1062,210 @@ overflow: hidden;
 }
 
 
+.shop {
+  padding: 115px 0;
+
+
+  &__inner {
+    display: flex;
+  }
+
+  &__filters {
+    margin-right: 30px;
+  }
+}
+
+.filter {
+  color: $accent;
+  @extend %rubik-400;
+  width: 270px;
+
+  &__title {
+    @extend %dmsans-700;
+    font-size: 18px;
+    color: $accent;
+    position: relative;
+    margin-bottom: 15px;
+    text-transform: uppercase;
+
+    &::after {
+      position: absolute;
+      content: '';
+      right: 120px;
+      top: 11px;
+      width: 38px;
+      height: 2px;
+      background-image: url('../images/icons/shop-title.svg');
+    }
+  }
+}
+
+.filter-category {
+  margin-bottom: 30px;
+
+  &__input {
+    @extend %hidden-checkbox;
+
+    &:checked+.filter-category__checkbox {
+      border-radius: 5px;
+      background-color: #edf1f4;
+    }
+  }
+
+  &__arrow {
+    background-image: url('../images/icons/shop-arrow.svg');
+    width: 5px;
+    height: 10px;
+    margin-top: 7px;
+    margin-left: -12px;
+  }
+
+  &__checkbox {
+    display: flex;
+    justify-content: space-between;
+    padding: 15px;
+  }
+}
+
+.filter-price {
+
+  &__title {
+    margin-bottom: 25px;
+
+    &::after {
+      left: 67px;
+    }
+  }
+
+  &__label {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 85px;
+  }
+}
 
 
 
 
 
+.irs--flat .irs-line {
+  top: 16px;
+  height: 2px;
+  background-color: #c2d2db;
+  border-radius: 4px;
+}
+
+.irs--flat .irs-bar {
+  top: 16px;
+  height: 4px;
+  background-color: #a3bbc8;
+}
+
+.irs--flat .irs-handle {
+  top: 10px;
+  width: 15px;
+  height: 15px;
+  background-color: #a3bbc8;
+}
+
+.irs--flat .irs-handle>i:first-child {
+  display: none;
+}
+
+.irs-from,
+.irs-to,
+.irs-single {
+  display: none;
+}
+
+.irs--flat .irs-min,
+.irs--flat .irs-max {
+  display: none;
+}
+
+
+.filter-brand {
+  margin-bottom: 65px;
+
+  &__title {
+    margin-bottom: 15px;
+
+    &::after {
+      left: 78px;
+    }
+  }
+
+  &__input {
+    @extend %hidden-checkbox;
+
+    &:checked+.filter-brand__checkbox {
+      border-radius: 5px;
+      background-color: #edf1f4;
+
+      .filter-brand__numb {
+        color: #243f4d;
+      }
+
+    }
+  }
+
+  &__checkbox {
+    display: flex;
+    justify-content: space-between;
+    padding: 15px 20px 15px 15px;
+
+
+  }
+
+  &__numb {
+    color: #b3b3b3;
+
+  }
+}
+
+
+.filter-product {
+  display: flex;
+  gap: 20px;
+  align-items: center;
+  margin-bottom: 20px;
+
+  &__title {
+    margin-bottom: 30px;
+    &::after{
+      left: 186px;
+    }
+  }
+
+  &__imgage {
+    width: 70px;
+    height: 70px;
+    border: 2px solid #f2f2f2;
+    display: flex;
+    align-items: center;
+  }
+
+  &__img {
+    margin: 0 auto;
+  }
+
+  &__name {
+    font-size: 14px;
+    color: #000;
+    @extend %rubik-400;
+    padding-bottom: 5px;
+  }
+
+  &__star {
+    margin-left: -6px;
+  }
+
+  &__text {
+    font-size: 15px;
+    color: #000;
+    padding-top: 5px;
+  }
+}
 
 
 
