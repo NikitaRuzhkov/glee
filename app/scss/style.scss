@@ -405,10 +405,10 @@ ul.menu__list {
     grid-template-columns: repeat(4, 1fr);
     grid-template-rows: repeat(2, 1fr);
     grid-gap: 30px;
+
   }
 
   &__item {
-
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center center;
@@ -438,15 +438,38 @@ ul.menu__list {
 }
 
 .buy {
-
   position: absolute;
-  top: 0;
-  bottom: 0;
-  right: 0;
-  left: 0;
+  bottom: 178px;
+  right: 42px;
+  display: flex;
+  gap: 20px;
+  justify-content: center;
+  align-items: center;
+overflow: hidden;
+  transform: translateY(1200%);
+  transition: all .3s;
 
-  overflow: hidden;
-  transform: translateY(-900%);
+
+  &__product {
+    width: 45px;
+    height: 45px;
+    background-color: #fff;
+    border-radius: 50%;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+   
+
+    &:hover {
+      background-color: #a3bbc8;
+
+      path {
+        fill: #fff;
+      }
+    }
+  }
+
+
 }
 
 .products__item:hover {
@@ -456,23 +479,23 @@ ul.menu__list {
 }
 
 
-.left-buy {
-  position: absolute;
-  top: 50%;
-  left: 10%;
-}
+// .left-buy {
+//   position: absolute;
+//   top: 50%;
+//   left: 10%;
+// }
 
-.center-buy {
-  position: absolute;
-  top: 50%;
-  left: 30%;
-}
+// .center-buy {
+//   position: absolute;
+//   top: 50%;
+//   left: 30%;
+// }
 
-.right-buy {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-}
+// .right-buy {
+//   position: absolute;
+//   top: 50%;
+//   left: 50%;
+// }
 
 .light {
   padding: 50px 0 45px;
@@ -982,38 +1005,41 @@ ul.menu__list {
     display: flex;
     gap: 110px;
   }
-  &__title{
+
+  &__title {
     @extend %dmsans-700;
     color: $accent;
     font-size: 36px;
     line-height: 32px;
     padding-bottom: 34px;
   }
-  &__text{
+
+  &__text {
     @extend %rubik-400;
     color: $accent;
     line-height: 30px;
     padding-bottom: 40px;
   }
-  &__button{
+
+  &__button {
     background-color: #a3bbc8;
     color: #fff;
-   width: 175px;
-   height: 50px;
-   display: block;
-  padding-left: 20px;
-   font-size: 15px;
-   line-height: 50px;
-   border-radius: 10px;
-   position: relative;
-   &::after{
-    position: absolute;
-    content: '→';
-  right: 20px;
-    top: -2px;
-    font-size: 20px
+    width: 175px;
+    height: 50px;
+    display: block;
+    padding-left: 20px;
+    font-size: 15px;
+    line-height: 50px;
+    border-radius: 10px;
+    position: relative;
 
-   }
+    &::after {
+      position: absolute;
+      content: '→';
+      right: 20px;
+      top: -2px;
+      font-size: 20px
+    }
   }
 
   &__info {
