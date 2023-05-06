@@ -15,13 +15,19 @@ $(function () {
     
   })
 
+  $(".shop-contentlist__star").rateYo({
+    starWidth: "18px",
+    normalFill: "#d6d6d6",
+    ratedFill: "#ffcc00",
+    readOnly: true,
+  });
+  
   $(".filter-product__star").rateYo({
     starWidth: "11px",
     normalFill: "#d6d6d6",
     ratedFill: "#ffcc00",
     readOnly: true,
   });
-  
 
 
   $('.top-slider__inner').slick({

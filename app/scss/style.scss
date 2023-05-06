@@ -1065,7 +1065,6 @@ ul.menu__list {
 .shop {
   padding: 115px 0;
 
-
   &__inner {
     display: flex;
   }
@@ -1091,7 +1090,7 @@ ul.menu__list {
     &::after {
       position: absolute;
       content: '';
-      right: 120px;
+      left: 120px;
       top: 11px;
       width: 38px;
       height: 2px;
@@ -1232,7 +1231,8 @@ ul.menu__list {
 
   &__title {
     margin-bottom: 30px;
-    &::after{
+
+    &::after {
       left: 186px;
     }
   }
@@ -1268,7 +1268,199 @@ ul.menu__list {
 }
 
 
+.shop-content {
+  margin-top: 10px;
 
+
+  &__inner {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 30px;
+    padding-bottom: 100px;
+  }
+
+  &__item {
+    width: 270px;
+    height: 380px;
+    box-shadow: 0px 6px 47px 3px rgba(37, 37, 37, 0.05);
+    border-radius: 10px;
+    text-align: center;
+    background-repeat: no-repeat;
+    background-position: center 50px;
+    position: relative;
+
+  }
+
+  &__img {
+    margin: 0 auto;
+  }
+
+  &__icons {
+    position: absolute;
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    height: 380px;
+    left: 50px;
+    opacity: 0;
+    transition: all .3s;
+
+    &:hover {
+      opacity: 1;
+    }
+  }
+
+
+  &__link {
+    margin: 0 auto;
+    width: 46px;
+    height: 46px;
+    background-color: #fff;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: all .3s;
+
+    &:hover {
+      background-color: #a3bbc8;
+
+      path {
+        fill: #fff;
+      }
+    }
+  }
+
+
+  &__title {
+    padding-top: 300px;
+    padding-bottom: 5px;
+    @extend %dmsans-400;
+    color: $accent;
+  }
+
+  &__text {
+    @extend %dmsans-700;
+    color: #a3bbc8;
+  }
+
+}
+
+
+.pagination {
+  text-align: center;
+
+  &:last-child {
+    margin-right: 0;
+  }
+
+  &__list {
+    padding: 20px 22px;
+    border: 1px solid $accent;
+    margin-right: 15px;
+    @extend %rubik-400;
+    color: $accent;
+  }
+
+  &__list--active {
+    color: #fff;
+    background-color: #a3bbc8;
+    border: none;
+  }
+
+}
+
+
+.shop-contentlist {
+  &__item {
+    display: flex;
+    margin-top: 10px;
+    gap: 55px;
+    margin-bottom: 40px;
+  }
+
+  &__images {
+    width: 370px;
+    height: 500px;
+    border: 2px solid #f2f2f2;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  &__product {
+    padding-top: 90px;
+  }
+
+  &__title {
+    font-size: 40px;
+    line-height: 26px;
+    @extend %rubik-400;
+    color: #333333;
+    margin-bottom: 25px;
+  }
+&__star{
+  margin-bottom: 35px;
+}
+  &__num {
+    font-size: 30px;
+    color: #333333;
+    @extend %rubik-400;
+    margin-bottom: 40px;
+  }
+
+  &__text {
+    @extend %rubik-400;
+    color: $accent;
+    font-size: 16px;
+    line-height: 30px;
+    width: 410px;
+    margin-bottom: 35px;
+  }
+  &__btn{
+    @extend %btn;
+    text-transform: uppercase;
+    border: none;
+    width: 200px;
+    border-radius: 10px;
+    cursor: pointer;
+    display: none;
+  }
+  &__btn--active{
+    display: block;
+  }
+  &__choose{
+    display: flex;
+    align-items: center;
+    
+    gap: 10px;
+  }
+  &__link {
+    display: block;
+    width: 50px;
+    height: 50px;
+      box-shadow: 0px 6px 47px 3px rgba(37, 37, 37, 0.05);
+    background-color: #fff;
+    display: flex;
+    align-items: center;
+   justify-content: center;
+  }
+  &__link--active{
+    background-color: #a3bac7;
+    path{
+      fill: #fff;
+    }
+  }
+
+
+
+}
+
+.pagination-list-two{
+  text-align-last: left;
+  padding-top: 60px;
+}
 
 
 
