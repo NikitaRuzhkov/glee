@@ -566,13 +566,13 @@ ul.menu__list {
 
   &__items {
     display: grid;
-    min-height: 530px;
     grid-template-columns: repeat(3, 1fr);
-    grid-gap: 35px 30px;
+    grid-gap: 25px 30px;
   }
 
   &__item {
-    background-size: cover;
+    height: 270px;
+    background-size: contain;
     background-repeat: no-repeat;
     background-position: center;
   }
