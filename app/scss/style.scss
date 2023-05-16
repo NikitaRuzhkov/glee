@@ -217,12 +217,16 @@ ul.menu__list {
   &__nav {
     display: flex;
     gap: 20px;
+ 
   }
 
 
   &__link {
     border-left: 1px solid #7b7b7b;
     padding-left: 16px;
+  }
+  &__link-no{
+    border-left: none;
   }
 
   &__link-first {
@@ -1737,8 +1741,12 @@ ul.menu__list {
   svg{
     margin: 0 auto;
   }
+ 
 
 }
+ &__link--active {
+   border-color: #a3bbc8;
+ }
 
  &__items{
   display: flex;
