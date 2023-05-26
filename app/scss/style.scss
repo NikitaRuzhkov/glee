@@ -638,13 +638,17 @@ ul.menu__list {
     justify-content: space-between;
     align-items: center;
     margin-bottom: 50px;
+  }
 
+  &__title-contact {
+    color: #436372;
   }
 
   &__title {
     font-size: 36px;
     line-height: 65px;
     text-align: center;
+    @extend %dmsans-700;
   }
 
   &__view {
@@ -2128,10 +2132,11 @@ ul.menu__list {
     @extend %rubik-400;
     color: #999999;
   }
-    &__author-text-link{
-      font-family: inherit;
-      font-size: inherit;
-    }
+
+  &__author-text-link {
+    font-family: inherit;
+    font-size: inherit;
+  }
 }
 
 .comments {
@@ -2291,7 +2296,7 @@ ul.menu__list {
     padding: 20px 30px 20px 20px;
     height: 120px;
     border: 1px solid #e0e0e0;
-    
+
 
     &::placeholder {
       color: #999999;
@@ -2310,6 +2315,171 @@ ul.menu__list {
   }
 }
 
+.contact {
+  padding-top: 120px;
+  text-align: center;
+
+  &__text {
+    color: #a3bbc8;
+    @extend %rubik-400;
+    margin-bottom: 15px;
+  }
+
+  &__title {
+    @extend %dmsans-700;
+    color: $accent;
+    font-size: 35px;
+    margin-bottom: 70px;
+  }
+
+  &__items {
+    display: flex;
+    justify-content: space-between;
+    gap: 30px;
+    margin-bottom: 120px;
+  }
+
+  &__item {
+    width: 370px;
+    height: 380px;
+    background-color: #fbfbfb;
+    color: #565872;
+    @extend %rubik-400;
+
+  }
+
+  &__item--active {
+    border: 2px solid #a3bbc8;
+
+    .contact__item-image {
+      background-color: #a3bbc8;
+
+      svg {
+        path {
+          fill: #fff;
+        }
+      }
+    }
+  }
+
+  &__item-image {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 70px auto;
+    width: 80px;
+    height: 80px;
+    background-color: #fff;
+    box-shadow: 0px 6px 57px 0px rgba(37, 37, 37, 0.05);
+    border-radius: 20px;
+  }
+
+  &__item-img {}
+
+  &__info {
+    span {
+      display: block;
+    }
+  }
+
+  &__info-title {
+    color: #222222;
+    font-size: 20px;
+    @extend %dmsans-700;
+    margin-bottom: 25px;
+  }
+
+  &__info-phone {
+    color: inherit;
+  }
+}
+
+#map {
+  width: 500px;
+  height: 354px;
+}
+
+.location {
+  margin-bottom: 130px;
+
+  &__inner {
+    display: flex;
+    gap: 50px;
+    justify-content: space-between;
+  }
+
+  &__form {
+    width: 620px;
+  }
+
+  &__form-about {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+    margin-bottom: 40px;
+  }
+
+  &__input {
+    width: 300px;
+    padding: 20px 50px 20px 20px;
+    border: none;
+    outline: none;
+    background-color: #fafafa;
+  }
+
+  &__form-box {
+    position: relative;
+    width: 300px;
+    height: 50px;
+   
+
+    span {
+      content: '';
+      position: absolute;
+      width: 15px;
+      height: 15px;
+      top: 20px;
+      right: 30px;
+    }
+  }
+
+  &__textarea {
+    width: 100%;
+    height: 175px;
+    resize: none;
+    border: none;
+    outline: none;
+    padding: 20px 50px 0 20px;
+    background-color: #fafafa;
+
+  }
+
+  &__form-textarea {
+    position: relative;
+    width: 100%;
+    height: 175px;
+    margin-bottom: 30px;
+
+    span {
+      content: '';
+      position: absolute;
+      width: 15px;
+      height: 15px;
+      top: 20px;
+      right: 30px;
+
+    }
+  }
+  &__btn{
+    @extend %btn;
+    border: none;
+    cursor: pointer;
+    border-radius: 10px;
+    width: 200px;
+    text-transform: uppercase;
+
+  }
+}
 
 
 
