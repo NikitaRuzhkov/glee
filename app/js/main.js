@@ -16,6 +16,10 @@ $(function () {
     $(this).toggleToggle();
   });
 
+  $('.shop-filter__btn').on('click', function () {
+    $('.shop__filters').toggleClass('shop__filters--active')
+  });
+
 
 
   $('.product-tabs__top-item').on('click', function(e){
@@ -45,6 +49,13 @@ $(function () {
     draggable: false,
     arrows: false,
     fade:true,
+    responsive: [
+      {
+        breakpoint: 1240,
+        settings: {
+          draggable: true,
+        }}
+      ]
   });
 
 
